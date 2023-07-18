@@ -61,7 +61,8 @@ const Authform = () => {
     return (
         <div 
             className=" 
-                
+                mt-8
+                sm:mx-auto
 
             
             

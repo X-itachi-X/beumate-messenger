@@ -28,7 +28,7 @@ const Input: React.FC<InputProps> = ({
 }) => {
     return (
         <div>
-           <label htmlFor=""></label>
+           <label htmlFor={id}></label>
         </div>
     );
 }

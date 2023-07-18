@@ -19,7 +19,13 @@ const Authform = () => {
 
 
 
-    const {} = useForm<FieldValues>({
+    const {
+        register,
+        handleSubmit,
+        formState:{
+            errors
+        }
+    } = useForm<FieldValues>({
         defaultValues: {
             name:'',
             email:'',

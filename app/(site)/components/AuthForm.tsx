@@ -1,6 +1,7 @@
 'use client';
 
 
+import Input from "@/app/components/inputs/Input";
 import { useCallback, useState } from "react";
 import { 
     FieldValues, 
@@ -80,10 +81,10 @@ const Authform = () => {
                 "
             >
                 <form
-                    classname="space-y-6"
+                    className="space-y-6"
                     onSubmit={handleSubmit(onSubmit)}
                 >
-                    
+                    <Input/>
 
                 </form>
             </div>

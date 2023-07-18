@@ -41,7 +41,7 @@ const Authform = () => {
         setIsLoading(true);
 
         if(variant === 'REGISTER') {
-            //
+            //Axios register
         }
     }
 

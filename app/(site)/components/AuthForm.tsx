@@ -3,7 +3,8 @@
 import { useCallback, useState } from "react";
 import { 
     FieldValues, 
-    useForm 
+    useForm,
+    SubmitHandler 
 } from "react-hook-form";
 
 type Variant = 'LOGIN' | 'REGISTER';
@@ -34,7 +35,11 @@ const Authform = () => {
             email:'',
             password:''
         }
-    })
+    });
+
+    const onSubmit: SubmitHandler<FieldValues> = (data) => {
+        
+    }
 
 
 

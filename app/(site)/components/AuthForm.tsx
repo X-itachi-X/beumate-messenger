@@ -1,5 +1,6 @@
 'use client';
 
+
 import { useCallback, useState } from "react";
 import { 
     FieldValues, 
@@ -82,7 +83,7 @@ const Authform = () => {
                     classname="space-y-6"
                     onSubmit={handleSubmit(onSubmit)}
                 >
-                    <Input />
+                    
 
                 </form>
             </div>

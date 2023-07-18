@@ -11,7 +11,9 @@ export default function Home() {
           lg:px-8
           bg-gray-100">
 
-            <div className="sm:mx-auto"></div>
+            <div className="sm:mx-auto sm:w-full sm:max-w-md">
+              
+            </div>
        
       </div>
     )

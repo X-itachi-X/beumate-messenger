@@ -1,6 +1,6 @@
 'use client';
 
-import
+import clsx from 'clsx';
 const Input = () => {
     return (
         <div>

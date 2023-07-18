@@ -49,7 +49,7 @@ const Authform = () => {
     }
 
     const socialAction = (action: string) => {
-        
+        setIsLoading(true);
     }
 
 

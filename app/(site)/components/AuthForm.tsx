@@ -84,6 +84,7 @@ const Authform = () => {
                     className="space-y-6"
                     onSubmit={handleSubmit(onSubmit)}
                 >
+                    {variant}
                     <Input id="email" 
                     label="Email" 
                     register={register} 

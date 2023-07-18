@@ -39,6 +39,10 @@ const Authform = () => {
 
     const onSubmit: SubmitHandler<FieldValues> = (data) => {
         setIsLoading(true);
+
+        if(variant === 'REGISTER') {
+            //
+        }
     }
 
 

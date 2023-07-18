@@ -29,6 +29,9 @@ const Input: React.FC<InputProps> = ({
     return (
         <div>
            <label 
+                className='
+                    block
+                '
                 htmlFor={id}
                 
                 

@@ -43,6 +43,9 @@ const Authform = () => {
         if(variant === 'REGISTER') {
             //Axios register
         }
+        if(variant === 'LOGIN') {
+            //New login
+        }
     }
 
 

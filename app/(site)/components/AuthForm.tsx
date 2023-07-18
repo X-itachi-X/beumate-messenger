@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useState } from "react";
+import { FieldValues, useForm } from "react-hook-form";
 
 type Variant = 'LOGIN' | 'REGISTER';
 
@@ -15,6 +16,15 @@ const Authform = () => {
             setVariant('LOGIN');
         }
     }, [variant]);
+
+
+
+    const {} = useForm<FieldValues>
+
+
+
+
+
     return (
         <div>Auth Form2!</div>
     );

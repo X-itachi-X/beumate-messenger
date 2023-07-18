@@ -78,7 +78,7 @@ const Authform = () => {
                 sm:px-10
                 "
             >
-
+                <form></form>
             </div>
 
         </div>

@@ -16,7 +16,9 @@ interface InputProps {
     errors: FieldErrors,
     disabled?: boolean;
 }
-const Input = () => {
+const Input = React.FC<InputProps>({
+    
+}) => {
     return (
         <div>
             I am an input!

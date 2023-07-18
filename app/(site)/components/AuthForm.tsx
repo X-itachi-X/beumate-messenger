@@ -67,10 +67,13 @@ const Authform = () => {
                 sm:max-w-md
  
             "
-        
-        
         >
+            <div 
+                className="
+                "
+            >
 
+            </div>
 
         </div>
     );

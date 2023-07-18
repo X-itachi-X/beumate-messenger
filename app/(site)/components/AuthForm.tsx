@@ -48,6 +48,10 @@ const Authform = () => {
         }
     }
 
+    const socialAction = (action: string) => {
+        
+    }
+
 
 
 

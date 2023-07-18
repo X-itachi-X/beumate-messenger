@@ -9,7 +9,7 @@ const Authform = () => {
     const [isLoading, setIsLoading] = useState(false);
 
     const toggleVariant = useCallback(() => {
-        if (variant == 'LOGIN'){
+        if (variant === 'LOGIN'){
             setVariant('REGISTER');
         }
     }, []);

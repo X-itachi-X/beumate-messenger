@@ -1,5 +1,7 @@
 const Authform = () => {
     return (
-        <div>Auth</div>
-    )
+        <div>Auth Form!</div>
+    );
 }
+
+export default Authform;

@@ -1,4 +1,6 @@
-'use client'
+'use client';
+
+import
 const Input = () => {
     return (
         <div>

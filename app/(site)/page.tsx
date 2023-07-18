@@ -1,7 +1,7 @@
 export default function Home() {
     return (
       <div>
-        <p className='text-sky-500 text-3xl'>Hello Messenger</p>
+        <p className='text-sky-500 text-3xl'>Hello Index page</p>
       </div>
     )
   }

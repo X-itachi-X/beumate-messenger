@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Home() {
     return (
       <div
@@ -12,7 +13,13 @@ export default function Home() {
           bg-gray-100">
 
             <div className="sm:mx-auto sm:w-full sm:max-w-md">
-              
+              <Image
+                alt="Logo"
+                height="48"
+                width="48"
+                className="mx-auto w-auto"
+                src="/image/logo.png"
+                />
             </div>
        
       </div>

@@ -100,7 +100,8 @@ const Authform = () => {
                         />
 
                         <Input id="password" 
-                        label="Name" 
+                        label="Password"
+                        type="password" 
                         register={register} 
                         errors={errors}
                         />

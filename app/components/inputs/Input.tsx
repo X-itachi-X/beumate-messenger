@@ -39,7 +39,7 @@ const Input: React.FC<InputProps> = ({
                 htmlFor={id}
                
             >
-                {}
+                {label}
             </label>
         </div>
     );

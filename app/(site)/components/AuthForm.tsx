@@ -1,7 +1,10 @@
 'use client';
 
 import { useCallback, useState } from "react";
-import { FieldValues, useForm } from "react-hook-form";
+import { 
+    FieldValues, 
+    useForm 
+} from "react-hook-form";
 
 type Variant = 'LOGIN' | 'REGISTER';
 

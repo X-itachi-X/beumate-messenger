@@ -13,7 +13,8 @@ interface InputProps {
     type?: string;
     required?: boolean;
     register: UseFormRegister<FieldValues>,
-    
+    errors: FieldErrors,
+    disabled?: boolean;
 }
 const Input = () => {
     return (

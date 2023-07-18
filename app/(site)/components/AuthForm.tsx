@@ -64,7 +64,7 @@ const Authform = () => {
                 mt-8
                 sm:mx-auto
                 sm:w-full
-                
+                sm:max-w-md
 
             
             

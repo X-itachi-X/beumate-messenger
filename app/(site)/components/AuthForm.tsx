@@ -2,7 +2,7 @@
 
 const Authform = () => {
     return (
-        <div>Auth Form!</div>
+        <div>Auth Form2!</div>
     );
 }
 

@@ -73,6 +73,9 @@ const Authform = () => {
                 bg-white
                 px-4
                 py-8
+                shadow
+                sm:rounded-lg
+                
                 "
             >
 

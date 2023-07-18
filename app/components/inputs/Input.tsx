@@ -16,8 +16,15 @@ interface InputProps {
     errors: FieldErrors,
     disabled?: boolean;
 }
-const Input = React.FC<InputProps>({
-    
+
+const Input: React.FC<InputProps> = ({
+    label,
+    id,
+    type,
+    required,
+    register,
+    errors,
+    disabled;
 }) => {
     return (
         <div>

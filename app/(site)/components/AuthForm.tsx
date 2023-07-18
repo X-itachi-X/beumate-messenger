@@ -19,7 +19,11 @@ const Authform = () => {
 
 
 
-    const {} = useForm<FieldValues>
+    const {} = useForm<FieldValues>({
+        defaultValues: {
+            
+        }
+    })
 
 
 

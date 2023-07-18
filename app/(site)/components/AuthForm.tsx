@@ -63,6 +63,8 @@ const Authform = () => {
             className=" 
                 mt-8
                 sm:mx-auto
+                sm:w-full
+                
 
             
             

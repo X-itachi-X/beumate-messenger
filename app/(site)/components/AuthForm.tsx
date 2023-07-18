@@ -70,6 +70,9 @@ const Authform = () => {
         >
             <div 
                 className="
+                bg-white
+                px-4
+                py-8
                 "
             >
 

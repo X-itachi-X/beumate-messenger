@@ -19,4 +19,7 @@ model User {
   hashedPassword String?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  conversationsIds String[] @db.ObjectId
+  
 }

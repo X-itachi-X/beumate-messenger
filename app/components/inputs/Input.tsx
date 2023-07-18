@@ -24,7 +24,7 @@ const Input: React.FC<InputProps> = ({
     required,
     register,
     errors,
-    disabled;
+    disabled
 }) => {
     return (
         <div>

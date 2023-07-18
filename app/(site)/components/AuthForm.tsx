@@ -44,7 +44,7 @@ const Authform = () => {
             //Axios register
         }
         if(variant === 'LOGIN') {
-            //New login
+            //NextAuth signin
         }
     }
 

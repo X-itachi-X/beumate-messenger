@@ -37,10 +37,10 @@ const Input: React.FC<InputProps> = ({
                     text-gray-900
                 '
                 htmlFor={id}
-                
-                
-                
-            ></label>
+               
+            >
+                {}
+            </label>
         </div>
     );
 }

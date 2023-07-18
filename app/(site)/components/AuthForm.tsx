@@ -91,6 +91,19 @@ const Authform = () => {
                         errors={errors}
                         />
                     )}
+
+                        <Input id="email" 
+                        label="Email address" 
+                        type="email"
+                        register={register} 
+                        errors={errors}
+                        />
+
+                        <Input id="password" 
+                        label="Name" 
+                        register={register} 
+                        errors={errors}
+                        />
                     
 
                 </form>

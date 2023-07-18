@@ -50,6 +50,7 @@ const Authform = () => {
 
     const socialAction = (action: string) => {
         setIsLoading(true);
+        
         // NextAuth social signin
     }
 

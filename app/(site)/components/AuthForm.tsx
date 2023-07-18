@@ -21,7 +21,9 @@ const Authform = () => {
 
     const {} = useForm<FieldValues>({
         defaultValues: {
-            
+            name:'',
+            email:'',
+            password:''
         }
     })
 

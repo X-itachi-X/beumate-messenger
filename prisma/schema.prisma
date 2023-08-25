@@ -11,14 +11,14 @@ datasource db {
 }
 
 model User {
-  id String @id @default(auto()) @map("_id") @db.ObjectId
-  name String?
-  email String? @unique
-  emailVerified DateTime?
-  image String?
-  hashedPassword String?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id              String @id @default(auto()) @map("_id") @db.ObjectId
+  name            String?
+  email           String?   @unique
+  emailVerified   DateTime?
+  image           String?
+  hashedPassword  String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
 
   conversationIds String[] @db.ObjectId
   conversations Conversation[] @relation(fields: [conversationIds], references: [id])
@@ -28,38 +28,36 @@ model User {
 
   accounts Account[]
   messages Message[]
-
-
 }
 
 model Account {
   id String @id @default(auto()) @map("_id") @db.ObjectId
-  userId String @db.ObjectId
-  type String
-  provider String
-  providerAccountId String
-  refresh_token String? @db.String
-  access_token String? @db.String
-  expires_at Int?
-  token_type String?
-  scope String?
-  id_token String? @db.String
-  session_state String?
+  userId             String   @db.ObjectId
+  type               String
+  provider           String
+  providerAccountId  String
+  refresh_token      String?  @db.String
+  access_token       String?  @db.String
+  expires_at         Int?
+  token_type         String?
+  scope              String?
+  id_token           String?  @db.String
+  session_state      String?
 
-  user User @relation(fields: [userId], references:[id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([provider, providerAccountId])
 }
 
 model Conversation {
   id String @id @default(auto()) @map("_id") @db.ObjectId
-  createdAt DateTime @default(now())
+  createdAt       DateTime @default(now())
   lastMessageAt DateTime @default(now())
   name String?
   isGroup Boolean?
-
+  
   messagesIds String[] @db.ObjectId
-  messages Message[] 
+  messages Message[]
 
   userIds String[] @db.ObjectId
   users User[] @relation(fields: [userIds], references: [id])
@@ -69,14 +67,14 @@ model Message {
   id String @id @default(auto()) @map("_id") @db.ObjectId
   body String?
   image String?
-  createAt DateTime @default(now())
+  createdAt DateTime @default(now())
 
   seenIds String[] @db.ObjectId
   seen User[] @relation("Seen", fields: [seenIds], references: [id])
 
   conversationId String @db.ObjectId
-  conversation Conversation @relation(fields: [conversationId], references: [id])
-
+  conversation Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  
   senderId String @db.ObjectId
-  semder User @relation(fields: [senderId], references: [id], onDelete: Cascade)
+  sender User @relation(fields: [senderId], references: [id], onDelete: Cascade)
 }

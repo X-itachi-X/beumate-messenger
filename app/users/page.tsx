@@ -1,6 +1,6 @@
 const Users = () => {
     return (
-        <div>Hello users</div>
+        <button>Logout</button>
     );
 }
 

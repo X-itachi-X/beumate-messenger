@@ -1,7 +1,9 @@
 {
-    "gitdoc.enabled": true,
-    "gitdoc.autoCommitDelay": 0,
-    "gitdoc.autoPullDelay": 0,
-    "gitdoc.autoPushDelay": 0,
-    "gitdoc.autoPush": "onCommit"
+  "gitdoc.enabled": true,
+  "gitdoc.autoCommitDelay": 0,
+  "gitdoc.autoPullDelay": 0,
+  "gitdoc.autoPushDelay": 0,
+  "gitdoc.autoPush": "onCommit",
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }

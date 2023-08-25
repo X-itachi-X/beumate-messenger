@@ -19,7 +19,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ToasterContext />
-        {children}</body>
+        {children}
+      </body>
     </html>
   )
 }

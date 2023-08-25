@@ -93,7 +93,7 @@ const Authform = () => {
                     onSubmit={handleSubmit(onSubmit)}
                 >
                     {variant === 'REGISTER' && (
-                        <Input id="Name" 
+                        <Input id="name" 
                         label="Name" 
                         register={register} 
                         errors={errors}

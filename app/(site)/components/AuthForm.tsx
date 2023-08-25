@@ -51,6 +51,7 @@ const Authform = () => {
         if(variant === 'REGISTER') {
            axios.post('api/register', data)
            .catch(() => toast.error('Something went wrong!'))
+           .finally(() => setIsLoading(false))
         }
         if(variant === 'LOGIN') {
             //NextAuth signin
